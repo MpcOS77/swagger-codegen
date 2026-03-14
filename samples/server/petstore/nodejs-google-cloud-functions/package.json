@@ -10,6 +10,12 @@
   "private": true,
   "dependencies": {
     "js-yaml": "^3.3.0",
-    "swagger-tools": "0.10.2"
-  }
+    "swagger-tools": "0.10.2",
+    "@snyk/protect": "latest"
+  },
+  "scripts": {
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
